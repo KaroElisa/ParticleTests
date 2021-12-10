@@ -1,0 +1,41 @@
+/* .container {
+   position: relative;
+ } */
+
+ .threeDiv{
+  position: absolute;
+  border:rgb(255, 0, 43);
+  border-width: 10px;
+ }
+
+.webcamDiv{
+   position: absolute;
+}
+
+.input_video{
+   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index */
+   z-index: -1;
+   position: absolute;
+
+   /* this bit flips the camera feed the right way around */
+   transform: scaleX(-1.0);
+   color: rgb(255, 0, 43);
+}
+
+body {
+   margin: 0;
+   overflow: hidden;
+ }
+
+ .output_canvas{
+   /* this bit flips the camera feed the right way around */
+   transform: scaleX(-1.0);
+   color: rgb(255, 0, 43);
+}
+
+#scene3d {
+	width: 900px;
+	height: 300px;
+	background: blue;
+}
+
